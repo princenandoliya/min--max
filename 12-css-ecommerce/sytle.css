@@ -1,0 +1,397 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    box-shadow: rgba(0, 36, 238, 0.966) 0px 1px 4px;
+    height: 80px;
+    padding-top: 20px;
+}
+.navbar{
+    max-width: 1320px;
+    margin: auto;
+}
+
+.logo{
+    float: left;
+}
+
+.nav{
+    float: right;
+}
+
+.nav-link{
+    display: inline-block;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.795);
+    padding: 5px 8px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.nav-link:hover{
+    background-color: gainsboro;
+    color: rgba(17, 0, 255, 0.966);
+}
+
+.nav-btn{
+    background-color: rgba(36, 11, 255, 0.671);
+    color: white;
+    padding: 5px 8px;
+    border-radius: 5px;
+}
+.nav-btn:hover{
+    background-color: rgba(128, 0, 0, 0.589);
+}
+
+
+ /* product section started  */More actions
+
+.btn{
+    letter-spacing: 2px;
+    font-weight: 600;
+    padding: 8px 8px;
+    border-radius: 4px;
+    color: white;
+    border: none;
+     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  
+}
+.btn:hover{
+    opacity: 0.9;
+}
+.btn-orange{
+
+
+    background-color: rgba(182, 170, 224, 0.87);
+}
+.btn-green{
+    background-color: rgb(118, 118, 253);
+}
+
+.btn-close{
+    border-radius: 50%;
+    padding:3px;
+    color: black;
+    transform: translateX(-30px);
+    opacity: 0.5;
+}
+
+.search:hover .btn-close{
+    opacity: 1;
+}
+
+.search{
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    padding: 8px ;
+    outline: none;
+}
+
+
+
+.container{
+    max-width: 1320px;
+    margin:50px auto;
+    border: 1px solid transparent;
+}
+
+.card{
+    /* border: 1px solid green; */
+    display: inline-block;
+    width: 23%;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 10px;
+}
+
+.card-img{
+    width: 100%;
+        border-radius: 10px;
+        padding: 2px;
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.card-body{
+    padding:5px 0px;
+}
+.card-body h4, button, h3{
+    margin-bottom: 10px;
+}
+.card-text{
+    text-align: start;
+    margin-top: 30px;
+  /* border: 1px solid green; */
+}
+
+
+
+
+.float-left{
+    float: left;
+    margin-right: 50%;
+}
+
+.float-right{
+    float: right;
+}
+
+/* product section started  */
+
+/* TRANSITION STARTED */
+.slide-up{
+    transition: all 0.4s;
+}
+.slide-up:hover{
+    transform: translateY(-10px);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+.zoom-in{
+    transform: all 0.4s;
+}
+.zoom-in:hover{
+    transform: scale(1.1);
+}
+
+
+
+/* TRANSITION END */
+
+
+/* Footer */
+footer.bg-dark {
+  background: #222;
+  color: white;
+  padding: 40px 30px;
+}
+
+.container1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 200px;
+  margin: 20px;
+}
+
+.footer-col h4 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: orange;
+}
+
+.footer-links {
+  list-style: none;
+  border: none;
+  
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: white;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: orange;
+}
+
+.footer-social a {
+  margin-right: 10px;
+  font-size: 20px;
+  color: white;
+  transition: color 0.3s;
+}
+
+.footer-social a:hover {
+  color: orange;
+}
+
+
+body {
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Card slide-up effect */
+.card.slide-up {
+  animation: slideUp 1s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* Hover effect on product cards */
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Zoom on buttons */
+.zoom-in {
+  transition: transform 0.2s ease;
+}
+
+.zoom-in:hover {
+  transform: scale(1.1);
+}
+
+/* Footer fade-in */
+footer {
+  animation: fadeInUp 1.2s ease-in;
+}
+
+@keyframes fadeInUp {
+  from { transform: translateY(30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+.red1{
+
+font-size: 20px;
+background-color: rgba(230, 219, 219, 0.425);
+border-radius: 10px;
+
+}
+.red{
+
+font-size: 20px;
+border-radius: 10px;
+
+
+}
+.red1:hover{
+
+background-color: rgba(125, 125, 252, 0.479);
+transition: all 0.2s;
+box-shadow: 12px 12px 2px 1px rgba(125, 125, 252, 0.479);
+
+}
+.red:hover{
+
+background-color: rgba(125, 125, 252, 0.479);
+transition: all 0.2s;
+box-shadow: 12px 12px 2px 1px rgba(125, 125, 252, 0.479);
+
+}
+
+
+
+
+
+@media (min-width: 250px) {
+    .card {
+        width: 90%;
+        margin: 10px auto;
+    }
+    
+    .search {
+        width: 100%;
+        font-size: 14px;
+    }
+    
+    .nav-link {
+        font-size: 12px;
+    }
+}
+
+
+@media (min-width: 476px) {
+    .card {
+        width: 80%;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+}
+
+
+@media (min-width: 576px) {
+    .card {
+        width: 48%;
+        display: inline-block;
+    }
+
+    .search {
+        width: 70%;
+    }
+
+    .nav-link {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 768px) {
+    .card {
+        width: 30%;
+    }
+
+    .nav-link {
+        display: inline-block;
+        margin: 0 5px;
+    }
+
+    .container1 {
+        flex-direction: row;
+        text-align: left;
+    }
+}
+
+
+@media (min-width: 990px) {
+    .card {
+        width: 23%;
+    }
+
+    .search {
+        width: 300px;
+    }
+
+    .nav {
+        float: right;
+    }
+
+    .logo {
+        float: left;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .card {
+        width: 22%;
+    }
+
+    .navbar {
+        max-width: 1320px;
+        margin: auto;
+    }
+
+    .nav-link {
+        font-size: 16px;
+        padding: 6px 10px;
+    }
+}
